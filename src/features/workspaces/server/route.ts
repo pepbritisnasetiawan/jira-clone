@@ -43,7 +43,7 @@ const app = new Hono()
           file.$id
         );
 
-        uploadedImageUrl = `data:image/png;base65,${Buffer.from(
+        uploadedImageUrl = `data:image/png;base64,${Buffer.from(
           arrayBuffer
         ).toString('base64')}`;
       }
